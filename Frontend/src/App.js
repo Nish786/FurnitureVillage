@@ -22,6 +22,7 @@ import OrderListScreen from './screens/OrderListScreen'
 import VendorProductScreen from './screens/VendorProductScreen';
 import VendorProductEditScreen from './screens/VendorProductEditScreen';
 import NavbarComponent from './components/NavbarComponent';
+import Bismilla from './screens/Bismilla'
 
 const App=()=>{
   return (
@@ -54,6 +55,7 @@ const App=()=>{
             exact
           />
       <Route path='/page/:pageNumber' component={Homescreen} exact/>
+      <Route path='/Bismilla' component={Bismilla} exact />
     </Container>
     </main>
     <Footer />

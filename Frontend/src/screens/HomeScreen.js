@@ -8,6 +8,8 @@ import Meta from "../components/Meta";
 import ProductCarousel from "../components/ProductCarousel";
 import { Link } from "react-router-dom";
 import ReactSlider from "../components/ReactSlider";
+import CompanyShowcase from '../components/CompanyShowcase'
+import { Col, Row } from "react-bootstrap";
 
 const HomeScreen = ({match,history}) => {
 
@@ -32,6 +34,9 @@ const HomeScreen = ({match,history}) => {
     {!keyword ? <ProductCarousel /> : <Link className="btn btn-light my-3 " to="/">
         Go Back
       </Link> }
+
+    <h1>Top Vendors</h1>
+    <CompanyShowcase />
         
     {loading?<Loader /> : error? <Message variant='danger' >{error}</Message>:(
      <>
