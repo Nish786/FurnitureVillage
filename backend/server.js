@@ -59,4 +59,4 @@ app.use(errorHandler)
 const PORT = process.env.PORT || 5000
 const MODE = process.env.NODE_ENV
 
-app.listen(5000,console.log(`Server is running in ${MODE} mode on port ${PORT}`.yellow.bold))
+app.listen(PORT,console.log(`Server is running in ${MODE} mode on port ${PORT}`.yellow.bold))
